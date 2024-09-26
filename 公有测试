@@ -1,0 +1,58 @@
+importimport os #1、利用import语句进行导入模块，用分隔符可以分隔导入多个包
+import导入数学、复制、随机、时间copy,random,time
+from collections import Counter #2、利用 from . 。.import ....进行导入import Counter  #2、利用from...import ....进行导入
+importimport numpy as np #3、利用as关键字重命名包名，以后再使用就可以直接用np了
+
+def hello_world(): #4、利用def关键字创建函数，简单来说：函数就是将具有独立功能的代码块组织成一个模块，需要的时候调用
+  #创建函数格式：def name(参数1，参数2....):....):
+  yourname = input('你好，请输入你的名字:') #5、输入函数，input(),若输入中有字符串可以输出'你好，请输入你的名字:')  #5、输入函数，input(),若input中有字符串可以输出
+  print('欢迎来到Python的世界,',yourname) #6、输出函数,print()，若要输出多个对象，利用分隔分隔print('欢迎来到Python的世界,',yourname)  #6、输出函数,print()，若要输出多个对象，利用逗号分隔
+  print('让我们开始学习吧~')print('让我们开始学习吧~')
+
+def hello_twice（）：
+  global yourname,yourheight,yourweight #7、利用全局关键字定义全局变量，使之在整个程序运行周期能够被调用
+  yourname = input('请输入你的名字：')'请输入你的名字：')
+  yourheight = input('请输入你的身高:')'请输入你的身高:')
+  yourweight = input('请输入你的体重:')'请输入你的体重:')
+
+#python中字符串的部分操作
+def deving_line（）：
+  单词1 ='i am line' #8、字符串的创建，利用单引号'或双引号"进行创建'i am line'  #8、字符串的创建，利用单引号' 或者双引号" 进行创建
+  word2 = word1.upper() #9、字符串的函数，利用运算符进行调用，该语句中的upper()可以将字符串转换为全大写字母.upper()  #9、字符串的函数，利用运算符.进行调用，该语句中的upper()可以将字符串转换为全大写字母
+  word3 = word1.lower() #10、lower()函数，将字符串转换为全小写.lower()  #10、lower()函数，将字符串转换为全小写
+  word4 = word1.title() #11、title()函数，可以将字符串标题化.title()  #11、title()函数，可以将字符串标题化
+  #三个以上函数流程图的部分函数
+  words = [word1,word2,word3,word4] #12、[]可以一个列表，列表可以创建很多的对象
+  line = '-' * 40 #13、利用*运算符创建字符串，这里有40个- 符号'-' * 40  #13、利用*运算符创建串，这里就是有40个-符号
+
+  endReturn = 行+单词[随机。 randint( 0 , 3 )]+line #14、字符串可以利用+号直接替换。兰特（0,3)]+line #14、字符串可以利用+号直接相连
+  #15、上面出现的随机。 randint()可以创建随机整数，0和3为随机数的上限值。 randint() 可以创建随机整数，0和3为随机数的上下限
+  返回 endReturn #16、函数返回值，可以在被调用时将这个值返回return endReturn  #16、函数返回值，可以在被调用时将这个值返回
+
+#学习python中的数字模型
+def study_number（）：
+  num1 = input( '请输入一个数字:' ) '请输入一个数字:' )
+  print ( '你输入的是数字%s' %num1, '可它的类型为：' , type (num1)) #17 输出、函数格式控制 print( '你输入是数字%s' % num1, '可其类型为：' , type(num1)) #17、输出函数格式控制
+  #18、type()函数可以返回该值的类型
+  num2 = int (input( '再输入一个数字:' )) #19、利用int()函数进行数值类型转换，将数字转换为int整型 int(input( '再输入一个数字:'))  #19、利用int()函数进行数值类型转换，将数字转换为int整型
+  print ( '你输入的是数字%s' % num2, '其类型为：' , type (num2)) print ( '你输入的是数字%s' % num2, ' 其类型为：' , type (数字2))
+  num3 = float(input( '再输入一个数字:' )) #20、float()函数转换可以为浮点数类型
+  print ( '你输入的是数字%s' % num3, '它的类型为：' , type (num3))
+  print ( 'num1+num2={}'  。格式（int (num1)+num2)) #21、数字加法
+  # 22、format()函数格式化输出，在字符串中的{}符号将被替换为format()的参数
+  print ( 'num1-num2={}' . format( int (num1)-num2)) #23、数字减法 print ( 'num1-num2={}'  . format ( int (num1)-num2)) #23、数字减法
+  print ( 'num1*num2={}' .format (num1*num2)) #24、num1*num2并不会是你想要的数据，input()函数，默认输入为字符类型 print ( 'num1* num2={}'  . format (num1*num2)) #24、num1*num2并不会是你想要的数据，input因为()函数，默认输入为字符类型
+  print ( 'num1*num2={}'  .format ( int (num1) * num2)) #25、数字乘法
+  print ( 'num2//num3={:.3f}'  .format (num2 //num3)) #26、数字整除，同时{:.3f}表示输出格式小数点后面保留三个
+  打印（'num2/num3={:.4f}'  。format (num2/num3)) #27、数字除法，保留小数点后四位
+  print ( 'num2%num3={:.4f}'  .format (num2 % num3)) #28、求余数
+  print ( 'num2%num3={:.4%}' .format (num2%num3)) #29、求余数，{: .4 %}输出格式为百分比格式 print ( 'num2%num3={:.4 %}'  . format (num2%num3)) #29、求余数，{: .4 %}输出格式为百分比格式
+  打印（'num1**num2={}' 。格式（int
+  print ( 'This is the {a},and {b}'. format(a='数字' ,b='一些操作' )) #31、format 参数，标记位置输出对应'This is the {a},and {b}'.format(a='numbers',b='some operations')) #31、format多参数，标记位置对应输出
+
+  one,two,three = True,True,False #32、bool值
+  打印（一，二，三）print(one,two,three)
+  print('and 运算符:',一和二,一和三) #33、and 侵犯，当两个值同时为真时才为真print('and运算符:',one and two,one and three) #33、and运算，当两个值同时为真时才为真
+  print('or 运算符:',一或二,一或三) #34、or 运算符，当两个值同假时为假print('or运算符:',one or two,one or three) #34、or运算符，当两个值同假时为假
+  print('not 操作:'
+
